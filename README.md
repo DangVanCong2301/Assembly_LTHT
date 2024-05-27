@@ -1,6 +1,5 @@
 # Lập trình hệ thống với Assembly
 ## Vì các các tệp assembly có giới hạn ký tự đặt tên nên ta sẽ viết tắt
--------------------------------------------------
 - tbc.asm     -> trung bình cộng (Bài 3 (Hai bài còn lại code trong ổ C:\))
 - tdsn.asm    -> tổng dãy số nguyên (Bài 4)
 - chs.asm     -> chia hai số (Bài 5)
