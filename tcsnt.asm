@@ -50,7 +50,7 @@ PS:
         int 21h
         cmp al, 'c'             ; Ký tự vừa nhận có phải là 'c'
         jne Exit                ; Nếu không phải thì thoát chương trình
-        jmp PS                  ; Còn không thì quay về đầu, bắt đầu lại chương trìnhk
+        jmp PS                  ; Còn không thì quay về đầu, bắt đầu lại chương trình
     Exit:
         mov ah, 4ch             ; Về DOS
         int 21h
