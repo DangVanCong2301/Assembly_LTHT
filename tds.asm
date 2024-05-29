@@ -22,6 +22,13 @@ PS:
         add ax, cx          ; ax = ax + cx
         loop L1 
         call HIEN_SO_N      ; Hiện giá trị biểu thức
+    Continue:
+        HienString m4       ; Hiện dòng nhắc m4
+        mov ah, 1           ; Nhận một ký tự từ bàn phím
+        int 21h 
+        cmp al, 'c'         ; Ký tự vừa nhận có phải là ký tự 'c'
+        jne Exit            ; Nếu không phải ký tự thì nhảy đến nhãn Exit
+        jmp PS              ; Còn không thì quay về đâu (bắt đầu lại chương trình)
     Exit:
         mov ah, 4ch         ; Về DOS
         int 21h
