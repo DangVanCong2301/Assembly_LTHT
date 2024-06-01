@@ -8,6 +8,6 @@
 - tcsn.asm    -> tổng cấp số nhân (Bài 7)
 - tds.asm     -> tổng dãy số (Bài 8)
 - tcsnt.asm   -> tìm các số nguyên tố (Bài 9)
+- main.asm, sub.asm -> tính giai thừa (chương trình đa tệp thuần tuý)
 ## Liên kết ngôn ngữ bậc cao
-### Tệp lô (đuôi .bat): e:\tc\bin\tcc -ms -It:\tc\include -Lt:\tc\lib %1 %2
-- altn.asm -> a luỹ thừa n (Bài 1)
+### Tệp lô (đuôi .bat): e:\tc\bin\tcc -ms -Ie:\tc\include -Le:\tc\lib %1 %2
