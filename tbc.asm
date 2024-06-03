@@ -1,14 +1,20 @@
-include lib1.asm
-.model small                ; Mô hình bộ nhớ cho chương trình dạng small
-.stack 100h                 ; Dành một vùng nhớ 256 byte cho ngăn xếp
-.data                       ; Dành một vùng nhớ đề cấp phát cho biến
-    m1 db 13, 10, 'Hay vao so thu 1: $'
-    m2 db 13, 10, 'Hay vao so thu 2: $'
-    m3 db 13, 10, 'Trung binh cong hai so nguyen la: $'
+INCLUDE lib1.asm
+.MODEL small                ; Mô hình bộ nhớ cho chương trình dạng small
+.STACK 100h                 ; Dành một vùng nhớ 256 byte cho ngăn xếp
+.DATA                       ; Dành một vùng nhớ đề cấp phát cho biến
+    m1  db 13, 10, 'CAC BAI TAP NGON NGU ASSEMBLY THUAN TUY'
+        db 13, 10, '-----------------***-------------------'
+        db 13, 10, 13, 10, 'Bai 3: Trung binh cong hai so nguyen'
+        db 13, 10, 13, 10, '---------------------------------------'
+        db 13, 10, 13, 10, '------------ CHUONG TRINH -------------'
+        db 13, 10, 'Hay vao so thu 1: $'
+    m2  db 13, 'Hay vao so thu 2: $'
+    m3  db 13, 'Trung binh cong hai so nguyen la: $'
     dautru db '-$'
-    m4 db '.5$'
-    m5 db 13, 10, 'Co tiep tuc chuong trinh khong(c/k)? $'
-.code
+    m4  db '.5$'
+    m5  db 13, 10, '---------------------------------------'
+        db 13, 10, 'Co tiep tuc chuong trinh khong(c/k)? $'
+.CODE
 PS:
     mov ax, @data           ; Đưa phần địa chỉ segment vùng nhớ dành cho dữ liệu
     mov ds, ax              ; vào ds (chỉ có khi có .data, có khai báo biến)
@@ -33,7 +39,7 @@ PS:
         HienString m4       ; còn Carry # 0 thì hiện '.5' lên màn hình
     L2:
         HienString m5       ; Hiện thông báo có tiếp tục
-        mov ah,             ; Chờ nhận một ký tự từ bàn phí
+        mov ah, 1           ; Chờ nhận một ký tự từ bàn phí
         int 21h
         cmp al, 'c'         ; Ký tự vừa nhận có phải là 'c'
         jne Exit            ; Nếu không phải thì nhảy đến nhãn Exit
@@ -42,5 +48,5 @@ PS:
     Exit:
         mov ah, 4ch         ; Về DOS
         int 21h
-include lib2.asm
-end PS
+INCLUDE lib2.asm
+END PS
