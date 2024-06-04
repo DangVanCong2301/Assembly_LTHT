@@ -1,22 +1,28 @@
-include lib1.asm
-.model small                ; Mô hình bộ nhớ cho chương trình dạng small
-.stack 100h                 ; Dành một vùng nhớ 256 byte cho ngăn xếp
-.data                       ; Dành một vùng nhớ để cấp phát cho biến (chỉ có khi chương trình có khai báo biến)
-    m1 db 13, 10, 'Hay vao so luong thanh phan: $'
-    m2 db 13, 10, 'a[$'
-    m3 db ']=$'
-    m4 db 13, 10, 'Day so vua nhap la: $'
-    m5 db ' $'
-    m6 db 13, 10, 'Tong day so nguyen la: $'
+INCLUDE lib1.asm
+.MODEL small                ; Mô hình bộ nhớ cho chương trình dạng small
+.STACK 100h                 ; Dành một vùng nhớ 256 byte cho ngăn xếp
+.DATA                       ; Dành một vùng nhớ để cấp phát cho biến (chỉ có khi chương trình có khai báo biến)
+    m1  db 13, 10, 'CAC BAI TAP NGON NGU ASSEMBLY THUAN TUY'
+        db 13, 10, '-----------------***-------------------'
+        db 13, 10, 13, 10, 'Bai 4: Tong 1 day so nguyen'
+        db 13, 10, 13, 10, '---------------------------------------'
+        db 13, 10, 13, 10, '------------ CHUONG TRINH -------------'
+        db 13, 10, 'Hay vao so luong thanh phan: $'
+    m2  db 13, 'a[$'
+    m3  db ']=$'
+    m4  db 13, 'Day so vua nhap la: $'
+    m5  db ' $'
+    m6  db 13, 10, 'Tong day so nguyen la: $'
     m6_1 db 13, 10, 'Tong cac thanh phan am cua mang: $'
     m6_2 db 13, 10, 'Tong cac thanh phan duong cua mang: $'
     m6_3 db 13, 10, 'Tong cac thanh phan chan cua mang: $'
     m6_4 db 13, 10, 'Tong cac thanh phan le cua mang: $'
-    m7 db 13, 10, 'Co tiep tuc chuong trinh khong(c/k)? $'
+    m7  db 13, 10, '---------------------------------------'
+        db 13, 10, 'Co tiep tuc chuong trinh khong(c/k)? $'
     slpt dw ?
     i   dw ?
     a dw 100 dup(?)
-.code
+.CODE
 PS:
     mov ax, @data           ; Đưa phần địa chỉ segment vào vùng nhớ
     mov ds, ax              ; dành cho dữ liệu vào ds (chỉ có khi có .data, có khai báo biến)
@@ -110,14 +116,15 @@ PS:
     ;--------------------------------------------------------------
 
     call HIEN_SO_N          ; Hiện giá trị tổng
-    HienString m7           ; Hiện thông báo m7 ('Co tiep tuc chuong trinh khong(c/k)?'
-    mov ah, 1               ; Chờ nhận ký tự từ bàn phím
-    int 21h
-    cmp al, 'c'             ; Ký tự vừa nhận có phải là ký tự 'c'?
-    jne Exit                ; Nếu không phải thì nhảy đến nhãn Exit (về DOS)
-    jmp PS                  ; Còn không thì quay về đầu (bắt đầu lại chương trình)
+    CONTINUE:
+        HienString m7           ; Hiện thông báo m7 ('Co tiep tuc chuong trinh khong(c/k)?'
+        mov ah, 1               ; Chờ nhận ký tự từ bàn phím
+        int 21h
+        cmp al, 'c'             ; Ký tự vừa nhận có phải là ký tự 'c'?
+        jne Exit                ; Nếu không phải thì nhảy đến nhãn Exit (về DOS)
+        jmp PS                  ; Còn không thì quay về đầu (bắt đầu lại chương trình)
     Exit:
         mov ah, 4ch         ; Về DOS
         int 21h
-include lib2.asm
-end PS
+INCLUDE lib2.asm
+END PS
