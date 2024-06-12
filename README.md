@@ -2,6 +2,7 @@
 ## Vì các các tệp assembly có giới hạn ký tự đặt tên nên ta sẽ viết tắt
 ### Các bài tập Assembly thuần tuý
 - lt.asm 		-> tính lũy thừa (Bài 1) 
+- gt.asm  		-> tính giai thừa (Bài 2)
 - tbc.asm     	-> trung bình cộng (Bài 3 (Hai bài còn lại code trong ổ C:\))
 - tdsn.asm    	-> tổng dãy số nguyên (Bài 4)
 - chs.asm     	-> chia hai số (Bài 5)
