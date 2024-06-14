@@ -1,10 +1,13 @@
 # Lập trình hệ thống với Assembly
 ## Vì các các tệp assembly có giới hạn ký tự đặt tên nên ta sẽ viết tắt
+### Thực hành trên lớp
+demo2.asm -> tổng hai số nguyên 
+demo3.asm ->
 ### Các bài tập Assembly thuần tuý
 - lt.asm 		-> tính lũy thừa (Bài 1) 
 - gt.asm  		-> tính giai thừa (Bài 2)
 - tbc.asm     	-> trung bình cộng (Bài 3 (Hai bài còn lại code trong ổ C:\))
-- tdsn.asm    	-> tổng dãy số nguyên (Bài 4)
+- tdsn.asm    	-> tổng dãy số nguyên của một mảng (Bài 4)
 - chs.asm     	-> chia hai số (Bài 5)
 - tcsc.asm    	-> tổng cấp số cộng (Bài 6)
 - tcsn.asm    	-> tổng cấp số nhân (Bài 7)
