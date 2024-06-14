@@ -18,15 +18,15 @@ INCLUDE lib1.asm
 		db 13, 10, 'Co tiep tuc chuong trinh khong (c/k)? $'
 .CODE
 PS:
-	mov ax, @data 
-	mov ds, ax 
-	clrscr
-	HienString m1 
-	int 11h 				; Ngắt hệ thống thực hiện việc đưa nội dung ô nhớ 0:41h -> al 
-	shr al, 1 				; Đưa bit thấp nhất vào bit cờ Carry
-	jc L1 					; Nếu bit cờ Carry = 1 thì nhảy đến L1 
-	HienString khong 		; Còn không thì thực hiện thông báo 'Khong'
-	jmp CONTINUE
+		mov ax, @data 
+		mov ds, ax 
+		clrscr
+		HienString m1 
+		int 11h 				; Ngắt hệ thống thực hiện việc đưa nội dung ô nhớ 0:41h -> al 
+		shr al, 1 				; Đưa bit thấp nhất vào bit cờ Carry
+		jc L1 					; Nếu bit cờ Carry = 1 thì nhảy đến L1 
+		HienString khong 		; Còn không thì thực hiện thông báo 'Khong'
+		jmp CONTINUE
 	
 	L1:
 		HienString co

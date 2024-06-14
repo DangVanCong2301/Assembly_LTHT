@@ -2,7 +2,7 @@
 ## Vì các các tệp assembly có giới hạn ký tự đặt tên nên ta sẽ viết tắt
 ### Thực hành trên lớp
 demo2.asm -> tổng hai số nguyên 
-demo3.asm ->
+demo3.asm -> Tổng các thành phần của một mảng
 ### Các bài tập Assembly thuần tuý
 - lt.asm 		-> tính lũy thừa (Bài 1) 
 - gt.asm  		-> tính giai thừa (Bài 2)
@@ -16,3 +16,6 @@ demo3.asm ->
 - main.asm, sub.asm -> tính giai thừa (chương trình đa tệp thuần tuý)
 ## Liên kết ngôn ngữ bậc cao
 ### Tệp lô (đuôi .bat): e:\tc\bin\tcc -ms -Ie:\tc\include -Le:\tc\lib %1 %2
+## Các bài tập lập trình hệ thống 
+comk.asm -> Có ổ mềm không (Bài 1) 
+ccomk.asm -> Có cổng COM không (Bài 2) 
