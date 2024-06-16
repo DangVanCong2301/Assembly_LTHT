@@ -17,5 +17,5 @@ demo3.asm -> Tổng các thành phần của một mảng
 ## Liên kết ngôn ngữ bậc cao
 ### Tệp lô (đuôi .bat): e:\tc\bin\tcc -ms -Ie:\tc\include -Le:\tc\lib %1 %2
 ## Các bài tập lập trình hệ thống 
-comk.asm -> Có ổ mềm không (Bài 1) 
-ccomk.asm -> Có cổng COM không (Bài 2) 
+- comk.asm -> Có ổ mềm không (Bài 1) 
+- ccomk.asm -> Có cổng COM không (Bài 2) 

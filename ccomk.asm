@@ -2,13 +2,23 @@ INCLUDE lib1.asm
 .MODEL small
 .STACK 100h
 .DATA
-	m1 db 13, 10, 'May tinh dang dung co cong COM khong? $'
+	m1 	db 13, 10, 'CAC BAI TAP LAP TRINH HE THONG'
+		db 13, 10, '------------------------------'
+		db 13, 10, 13, 10, 'Bai 2: Hay viet chuong trinh biet may tinh ban dung co cong COM khong?'
+		db 13, 10, 'Neu co thi bao nhieu cong va cho biet dia chia cac cong cong do'
+		db 13, 10, '(dia chi cong phai la HEXA)'
+		db 13, 10, 'Cach giai: Chu y byte cua dia chi 0:411h cua vung du lieu ROM BIOS co chua cac'
+		db 13, 10, 'thong tin lien quan den thong tin ve so luong cong COM ma may tinh co.'
+		db 13, 10, 13, 10, '------------------------------'
+		db 13, 10, 13 ,10, '--------------- CHUONG TRINH ---------------'
+		db 13, 10, 'May tinh dang dung co cong COM khong? $'
 	co db 'Co $'
 	khong db 'Khong $'
 	m2 db 13, 10, 'So luong cong COM ma may tinh co la: $'
 	m3 db 13, 10, 'Dia chi cac cong COM la: $'
 	space db ' $'
-	m4 db 13, 10, 'Co tiep tuc chuong trinh khong (c/k) $'
+	m4 	db 13, 10, '------------------------------'
+		db 13, 10, 'Co tiep tuc chuong trinh khong (c/k) $'
 .CODE
 PS:
 		mov ax, @data 
