@@ -1,8 +1,9 @@
 # Lập trình hệ thống với Assembly
 ## Vì các các tệp assembly có giới hạn ký tự đặt tên nên ta sẽ viết tắt
 ### Thực hành trên lớp
-demo2.asm -> tổng hai số nguyên 
-demo3.asm -> Tổng các thành phần của một mảng
+- demo2.asm -> tổng hai số nguyên 
+- demo3.asm -> Tổng các thành phần của một mảng
+- demo4.asm -> Tìm số lớn nhất của dãy số
 ### Các bài tập Assembly thuần tuý
 - lt.asm 		-> tính lũy thừa (Bài 1) 
 - gt.asm  		-> tính giai thừa (Bài 2)
