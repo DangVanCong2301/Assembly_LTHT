@@ -19,3 +19,4 @@ demo3.asm -> Tổng các thành phần của một mảng
 ## Các bài tập lập trình hệ thống 
 - comk.asm -> Có ổ mềm không (Bài 1) 
 - ccomk.asm -> Có cổng COM không (Bài 2) 
+- clptk.asm -> Có cổng LPT nào không (Bài 3)
