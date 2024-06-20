@@ -4,6 +4,7 @@
 - demo2.asm -> tổng hai số nguyên 
 - demo3.asm -> Tổng các thành phần của một mảng
 - demo4.asm -> Tìm số lớn nhất của dãy số
+- demo5.asm -> Vị trí giá trị lớn nhất của dãy số nguyên
 ### Các bài tập Assembly thuần tuý
 - lt.asm 		-> tính lũy thừa (Bài 1) 
 - gt.asm  		-> tính giai thừa (Bài 2)

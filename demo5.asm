@@ -6,7 +6,7 @@ INCLUDE lib1.asm
     m2 db 13, 10, 'Hay vao cac so cua day: $'
     m3 db 13, 10, 'a[$'
     m4 db ']=$'
-    m5 db 13, 10, 'So lon nhat cua day so nguyen la: $'
+    m5 db 13, 10, 'So be nhat la: $'
 .CODE
 PS:
         mov ax, @data 
@@ -16,7 +16,7 @@ PS:
         call VAO_SO_N 
         mov cx, ax ; cx = số lượng thành phần
         xor bx, bx ; bx = chỉ số thứ tự của dãy số khi vào
-        mov dx, -32768 ; dx chứa giá trị -32768
+        mov dx, 32768 ; dx chứa giá trị -32768
         HienString m2 
 
     L1:
@@ -25,8 +25,8 @@ PS:
         call HIEN_SO_N ; Hiện i 
         HienString m4 ; ']='
         call VAO_SO_N 
-		cmp dx, ax ; So sánh số hiện lớn nhất với số vừa vào
-		jg L2 ; Số hiện là lớn nhất với số vừa vào, nhảy
+		cmp dx, ax ; So sánh số hiện nhỏ với số vừa vào
+		jb L2 ; Số hiện là lớn nhất với số vừa vào, nhảy
 		mov dx, ax ; Còn ngược lại đưa số vừa vào vào dx 
 
 	L2: 
