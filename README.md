@@ -23,3 +23,4 @@
 - ccomk.asm -> Có cổng COM không (Bài 2) 
 - clptk.asm -> Có cổng LPT nào không (Bài 3)
 - cdkmh.asm -> Có card điều kiển màn hình loại gì (Bài 4)
+- ttm.asm -> Tạo thư mục (Bài 5)
