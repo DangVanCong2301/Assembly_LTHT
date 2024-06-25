@@ -18,7 +18,7 @@ INCLUDE lib1.asm
 	m3 db 13, 10, 'Dia chi cac cong COM la: $'
 	space db ' $'
 	m4 	db 13, 10, '------------------------------'
-		db 13, 10, 'Co tiep tuc chuong trinh khong (c/k) $'
+		db 13, 10, 'Co tiep tuc chuong trinh khong (c/k)? $'
 .CODE
 PS:
 		mov ax, @data 

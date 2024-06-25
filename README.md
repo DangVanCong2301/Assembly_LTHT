@@ -25,3 +25,5 @@
 - cdkmh.asm -> Có card điều kiển màn hình loại gì (Bài 4)
 - ttm.asm -> Tạo thư mục (Bài 5)
 - copyt.asm, ct1.txt(tệp tạo) -> Copy 1 tệp (Bài 6)
+- more.asm -> Hiện nội dung tệp dạng ASCII lên màn hình
+
