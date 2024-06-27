@@ -1,8 +1,10 @@
 # Lập trình hệ thống với Assembly
 ## Vì các các tệp assembly có giới hạn ký tự đặt tên nên ta sẽ viết tắt
 ### Thực hành trên lớp
-demo2.asm -> tổng hai số nguyên 
-demo3.asm -> Tổng các thành phần của một mảng
+- demo2.asm -> tổng hai số nguyên 
+- demo3.asm -> Tổng các thành phần của một mảng
+- demo4.asm -> Tìm số lớn nhất của dãy số
+- demo5.asm -> Vị trí giá trị lớn nhất của dãy số nguyên
 ### Các bài tập Assembly thuần tuý
 - lt.asm 		-> tính lũy thừa (Bài 1) 
 - gt.asm  		-> tính giai thừa (Bài 2)
@@ -19,3 +21,9 @@ demo3.asm -> Tổng các thành phần của một mảng
 ## Các bài tập lập trình hệ thống 
 - comk.asm -> Có ổ mềm không (Bài 1) 
 - ccomk.asm -> Có cổng COM không (Bài 2) 
+- clptk.asm -> Có cổng LPT nào không (Bài 3)
+- cdkmh.asm -> Có card điều kiển màn hình loại gì (Bài 4)
+- ttm.asm -> Tạo thư mục (Bài 5)
+- copyt.asm, ct1.txt(tệp tạo) -> Copy 1 tệp (Bài 6)
+- more.asm -> Hiện nội dung tệp dạng ASCII lên màn hình
+

@@ -30,12 +30,12 @@ PS:
 	
 	L1:
 		HienString co
-		HienString m2 		; Hiện thông báo 'So luong o mem'
-		mov cl, 5 			; Chuyển 2 bit (số lượng ổ mềm - 1) sang phải 5 lần 
+		HienString m2 			; Hiện thông báo 'So luong o mem'
+		mov cl, 5 				; Chuyển 2 bit (số lượng ổ mềm - 1) sang phải 5 lần 
 		shr al, cl 
-		inc al 				; al = số lượng ổ mềm 
-		add al, 30h 		; al là mã ASCII số lượng ổ mềm 
-		mov ah, 0eh 		; Chức năng hiện 1 ký tự ASII lên màn hình 
+		inc al 					; al = số lượng ổ mềm 
+		add al, 30h 			; al là mã ASCII số lượng ổ mềm 
+		mov ah, 0eh 			; Chức năng hiện 1 ký tự ASII lên màn hình 
 		int 10h
 		
 	CONTINUE:
