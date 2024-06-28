@@ -16,19 +16,22 @@ PS:
         HienString m1
         int 11h ; Ngắt hệ thống thực hiện đưa nội dung ô nhớ 0:411h -> ah
         mov al, ah ; Đưa nội dung 0:411h -> al
-        mov cl, 6 
-        shr al, cl ; al = số lượng cổng LPT
+        
+        and al, 11000000b
+        shr al, 6
         jnz L1 ; Nếu al # 0 (có cổng LPT thì nhảy)
         HienString khong ; Còn không thì hiện thông báo 'Khong'
-    
+        jmp Exit
+
     L1:
         HienString co
         mov cl, al 
         xor ch, ch ; cx = số lượng công LPT (chỉ số vòng lặp hiện địa chỉ)
         HienString m2 
-        add al, 30h ; al là mã ASCII số lượng cổng LPT
-        mov ah, 0eh ; Chức năng hiện một ký tự ASCII lên màn hình
-        int 10h 
+        mov dl, al 
+        add dl, '0'
+        mov ah, 2 
+        int 21h
         HienString m3 
         xor ax, ax 
         mov es, ax 
