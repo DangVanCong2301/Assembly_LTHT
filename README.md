@@ -29,4 +29,5 @@
 - doiten.asm -> Đổi tên 1 tệp (Bài 8)
 - ltt.asm -> Lấy thuộc tính của tệp (Bài 9)
 - dtt.asm -> Đặt thuộc tính cho tệp (Bài 10)
-- ct.asm -> Chia tệp thành 2 tệp bằng nhau
+- ct.asm -> Chia tệp thành 2 tệp bằng nhau (Bài 11)
+- dd.asm -> Đặt ngày, tháng, năm date và giữ nguyên giờ, phút, giây cho tệp 

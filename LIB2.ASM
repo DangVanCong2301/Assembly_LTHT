@@ -70,6 +70,26 @@ HIEN_SO_N PROC
 	ret
 HIEN_SO_N ENDP
 
+;-----------------------------------------------------
+; Nhan 1 so nguyen co 2 chu so (phai danh du va dung)|
+;-----------------------------------------------------
+
+VAO_2_SO PROC
+	push bx cx dx 
+	mov bl, 10
+	mov ah, 1 	; Chờ nhan chu so hang chuc 
+	int 21h 
+	sub al, 30h ; Chuyen so dang ASCII sang dang so 
+	mul bl 		; Nhan so hang chuc voi 10 
+	mov cl, al 	; So hang chuc tam cat vao cl 
+	mov ah, 1 	; Cho nhan chu so hang don vi 
+	int 21h 
+	sub al, 30h 
+	add al, cl 	; Cong so hang don vi voi hang chuc 
+	pop dx cx bx
+	ret 
+VAO_2_SO ENDP
+
 ;------------------------------------------
 ; Chuong trinh con hien 1 so nguyen trong  |
 ; thanh ghi AX ra man hinh dang co so HEXA |
