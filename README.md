@@ -1,5 +1,12 @@
 # Lập trình hệ thống với Assembly
 ## Vì các các tệp assembly có giới hạn ký tự đặt tên nên ta sẽ viết tắt
+### Lệnh dịch
+- B1: mount c c:\
+- B2: c:
+- B3: cd asm 
+- B4: tasm ten_tep (ten_tep.asm)
+- B5: tlink ten_tep (ten_tep.obj) (Nếu trong thư mục có liên kết với C++ thì đổi tlink1)
+- B6: ten_tep (ten_tep.exe)
 ### Thực hành trên lớp
 - demo2.asm -> tổng hai số nguyên 
 - demo3.asm -> Tổng các thành phần của một mảng
@@ -31,3 +38,5 @@
 - dtt.asm -> Đặt thuộc tính cho tệp (Bài 10)
 - ct.asm -> Chia tệp thành 2 tệp bằng nhau (Bài 11)
 - dd.asm -> Đặt ngày, tháng, năm date và giữ nguyên giờ, phút, giây cho tệp 
+- time.asm -> Lấy giờ, phút, giây hiện tại của máy tính 
+- date.asm -> Lấy ngày, tháng, năm của máy tính
